@@ -22,3 +22,18 @@
     border: 2px solid #ffae42;
     padding: 10px 30px;
 }
+
+/* Info */
+.info-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+.info-column {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
