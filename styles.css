@@ -15,6 +15,7 @@
 
 .banner-col-txt {
     flex: 1;
+    font-weight: 400;
 }
 
 .banner-btn {
@@ -36,4 +37,25 @@
     flex: 1;
     text-align: center;
     padding: 10px;
+}
+
+/* Button */
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+.btn-column {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}   
+
+.buy-btn {
+    border: 2px solid #ffae42;
+    background-color: white;
+    padding: 10px 30px;
 }
