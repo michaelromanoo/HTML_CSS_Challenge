@@ -1,9 +1,9 @@
-// get toggle button
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-// get navbar links
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-// add event listener to toggle active class
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
+hamburger.addEventListener("click", responsiveMenu);
+
+function responsiveMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
