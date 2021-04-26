@@ -17,21 +17,6 @@
     padding: 10px 100px;
 }
 
-.hamburger {
-    display: none;
-    padding: 10px;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -45,6 +30,39 @@
 
 .nav-link:hover{
     color:#ffae42;;
+}
+
+/* Navbar Logo */
+.brand-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.brand-title p {
+    font-size: 20px;
+}
+
+
+.brand-title img {
+    height: 60px;
+    padding: 10px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    padding: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 /* Banner */
@@ -113,29 +131,12 @@
 .btn-column {
     flex: 1;
     text-align: center;
-    padding: 10px;
 }   
 
 .buy-btn {
     border: 2px solid #ffae42;
     background-color: white;
     padding: 10px 30px;
-}
-
-.brand-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
-.brand-title p {
-    font-size: 20px;
-}
-
-
-.brand-title img {
-    height: 60px;
-    padding: 10px;
 }
 
 /* Media Query */
