@@ -1,4 +1,4 @@
-# HTML_CSS_Challenge
+# Basic Landing Page
 HTML &amp; CSS Coding Challenge
 
 a simple responsive web page
