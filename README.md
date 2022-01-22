@@ -1,4 +1,6 @@
-# HTML_CSS_Challenge
+# Basic Landing Page
+
+HTML &amp; CSS Coding Challenge
 
 A simple responsive landing page built with HTML, CSS & plain JavaScript.
 I wanted to challenge my fundamental skills without using a JavaScript Framework.
