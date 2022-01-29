@@ -1,5 +1,8 @@
 /* Current CSS Style is Desktop First */
 /* TODO: refactor css code to mobile first */
+/* mobile first css => writing our css for mobile devices first
+and then use media queries for larger screen sizes */
+/* max-width => All styles applied in that media query will run as long as 'screen' is below the max width */
 /* CSS Resets */
 * {
   margin: 0px;
@@ -9,6 +12,8 @@
   list-style-type: none;
 }
 
+/* Mobile First CSS */
+/* styles here will be appled for screen sizes until 768px */
 /* Header */
 header {
   background-color: #e8e8e8;
@@ -27,7 +32,25 @@ header {
 }
 
 .nav-menu > li {
+  display: none;
   padding: 10px;
+  cursor: pointer;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: block;
+  padding: 10px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
 
 /* .navbar {
@@ -70,43 +93,30 @@ header {
   padding: 10px;
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: none;
-  padding: 10px;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 4px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
 /* Banner */
 .banner {
   display: flex;
-  /* flex-wrap: wrap; */
-  padding: 20px 100px;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
   background-color: #f6f6f6;
 }
 
 .banner img {
-  max-width: 100%;
-  max-height: 100%;
+  height: 150px;
+  /* max-width: 100%;
+  max-height: 100%; */
 }
 
 .banner-col-img {
-  flex: 1;
   text-align: center;
+  order: 1;
 }
 
 .banner-col-txt {
-  flex: 1;
+  text-align: center;
   padding: 20px;
+  order: 2;
 }
 
 .banner-col-txt-details {
@@ -120,13 +130,11 @@ header {
 }
 
 /* Info */
-/* parent element */
+/* flex-wrap here changed everything lol */
 .info-row {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-direction: column;
   align-items: center;
-  padding: 30px 70px;
-  width: 100%;
 }
 
 /* child element */
@@ -155,17 +163,63 @@ header {
 }
 
 /* Media Query */
-@media only screen and (max-width: 768px) {
+/* min-width => all styles applied will run as long as the the "screen" is above the min width */
+/* applies to screens 768px and above */
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8e8e8;
+    padding: 10px 100px;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .brand-title > p {
+    color: red;
+  }
+
+  .nav-menu > li {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .nav-menu > li:hover {
+    color: #ffae42;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 100px;
+  }
+
+  .banner-col-text {
+    order: 1;
+  }
+
+  .banner-col-img {
+    order: 2;
+  }
+
   .info-row,
   .btn-row {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     padding: 30px 70px;
   }
 
-  .banner {
+  /* .banner {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -210,7 +264,6 @@ header {
 
   .navbar {
     padding: 0px;
-    /* position: fixed; */
     width: 100%;
   }
 
@@ -234,5 +287,5 @@ header {
   .banner-col-txt {
     order: 2;
     text-align: center;
-  }
+  } */
 }
