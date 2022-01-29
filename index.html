@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boxed Coffee</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav class="navbar">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
         <div class="brand-title">
-            <img src="img/logo.png" alt="">
-            <p>boxed coffee</p>
-        </div>
+          <img src="img/logo.png" alt="Logo Image" />
+          <p>Boxed Coffee</p>
         </div>
         <ul class="nav-menu">
-            <li class="nav-link">Products</li>
-            <li class="nav-link">About</li>
-            <li class="nav-link">Contact</li>
-            <li class="nav-link">Free Trial</li>
+          <li>Products</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Free Trial</li>
         </ul>
         <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+    </header>
     </nav>
     <div class="banner">
-        <div class="banner-col-txt">
-            <h1>Coffee delivered straight to your door</h1>
-            <div class="banner-col-txt-details">
-                <p>Get boxed organic coffee delivered to your home.</p>
-                <p>Drink in minutes</p>
-            </div>
-            <button class="banner-btn">Try Boxed Coffee free for 7 days</button>
+      <div class="banner-col-txt">
+        <h1>Coffee delivered straight to your door</h1>
+        <div class="banner-col-txt-details">
+          <p>Get boxed organic coffee delivered to your home.</p>
+          <p>Drink in minutes</p>
         </div>
-        <div class="banner-col-img">
-            <img src="img/coffee.png" alt="">
-        </div>
+        <button class="banner-btn">Try Boxed Coffee free for 7 days</button>
+      </div>
+      <div class="banner-col-img">
+        <!-- DONE : remove background -->
+        <img src="img/coffee.png" alt="" />
+      </div>
     </div>
     <div class="info-row">
-        <div class="info-column">
-            <div class="column-img">
-                <img src="/img/icon-delivery.png" alt="">
-            </div>
-            <div class="column-content">
-                <h2>Delivered Fast</h2>
-                <br />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, voluptates.</p>
-            </div>
+      <!-- TODO: refactor code -->
+      <div class="info-column">
+        <div class="column-img">
+          <img src="/img/icon-delivery.png" alt="" />
         </div>
-        <div class="info-column">
-            <div class="column-img">
-                <img src="/img/icon-coffee.png" alt="">
-            </div>
-            <div class="column-content">
-                <h2>Delivered Hot</h2>
-                <br />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, voluptates.</p>
-            </div>
+        <div class="column-content">
+          <h2>Delivered Fast</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+            voluptates.
+          </p>
         </div>
-        <div class="info-column">
-            <div class="column-img">
-                <img src="/img/icon-time.png" alt="">
-            </div>
-            <div class="column-content">
-                <h2>Delivered Now</h2>
-                <br />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, voluptates.</p>
-            </div>
+      </div>
+      <div class="info-column">
+        <div class="column-img">
+          <img src="/img/icon-coffee.png" alt="" />
         </div>
+        <div class="column-content">
+          <h2>Delivered Hot</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+            voluptates.
+          </p>
+        </div>
+      </div>
+      <div class="info-column">
+        <div class="column-img">
+          <img src="/img/icon-time.png" alt="" />
+        </div>
+        <div class="column-content">
+          <h2>Delivered Now</h2>
+          <br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+            voluptates.
+          </p>
+        </div>
+      </div>
     </div>
     <div class="btn-row">
-        <div class="btn-column">
-            <button class="buy-btn">Buy fast, hot coffee now</button>
-        </div>
+      <button class="buy-btn">Buy fast, hot coffee now</button>
     </div>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
