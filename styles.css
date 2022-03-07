@@ -17,6 +17,11 @@ and then use media queries for larger screen sizes */
 /* Header */
 header {
   background-color: #e8e8e8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
 }
 
 /* Navbar Menu */
@@ -95,6 +100,8 @@ header {
 
 /* Banner */
 .banner {
+  position: relative;
+  top: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
