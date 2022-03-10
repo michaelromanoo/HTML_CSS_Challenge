@@ -27,19 +27,31 @@ header {
 /* Navbar Menu */
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: #e8e8e8;
 }
 
 .nav-menu {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  /* display: flex;
+  align-items: center; */
+}
+
+.nav-menu.active {
   display: flex;
-  align-items: center;
+  height: 100vh;
 }
 
 .nav-menu > li {
-  display: none;
-  padding: 10px;
+  /* display: none; */
+  padding: 70px;
+  text-align: center;
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 /* Hamburger Menu */
@@ -142,6 +154,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px 0px;
 }
 
 /* child element */
@@ -176,18 +189,19 @@ header {
   .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #e8e8e8;
-    padding: 10px 100px;
+    /* padding: 10px 100px; */
   }
   .nav-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    width: auto;
   }
 
-  .navbar .brand-title > p {
+  /* .navbar .brand-title > p {
     color: red;
-  }
+  } */
 
   .nav-menu > li {
     display: block;
@@ -207,11 +221,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 30px 100px;
+    /* padding: 30px 100px; */
   }
 
-  .banner-col-text {
-    order: 1;
+  .banner-col-txt {
+    text-align: left;
   }
 
   .banner-col-img {
