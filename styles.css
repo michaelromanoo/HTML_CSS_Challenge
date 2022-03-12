@@ -33,7 +33,7 @@ header {
   background-color: #e8e8e8;
 }
 
-.nav-menu {
+#nav-menu {
   display: none;
   width: 100%;
   flex-direction: column;
@@ -41,12 +41,12 @@ header {
   align-items: center; */
 }
 
-.nav-menu.active {
+#nav-menu.active {
   display: flex;
   height: 100vh;
 }
 
-.nav-menu > li {
+#nav-menu > li {
   /* display: none; */
   padding: 70px;
   text-align: center;
@@ -193,7 +193,7 @@ header {
     background-color: #e8e8e8;
     /* padding: 10px 100px; */
   }
-  .nav-menu {
+  #nav-menu {
     display: flex;
     flex-direction: row;
     width: auto;
@@ -203,13 +203,13 @@ header {
     color: red;
   } */
 
-  .nav-menu > li {
+  #nav-menu > li {
     display: block;
     padding: 10px;
     cursor: pointer;
   }
 
-  .nav-menu > li:hover {
+  #nav-menu > li:hover {
     color: #ffae42;
   }
 
