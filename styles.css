@@ -150,7 +150,7 @@ header {
 
 /* Info */
 /* flex-wrap here changed everything lol */
-.info-row {
+#info-row {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,7 +232,7 @@ header {
     order: 2;
   }
 
-  .info-row,
+  #info-row,
   .btn-row {
     display: flex;
     flex-direction: row;
