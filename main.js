@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.getElementById("nav-menu");
 const infoRow = document.getElementById("info-row");
+const navLink = document.querySelectorAll(".nav-link");
 const fragment = new DocumentFragment();
 const contentFragment = new DocumentFragment();
 const menuItems = ["Products", "About", "Contact", "Free Trial"];
@@ -28,12 +29,37 @@ const infoItems = [
   },
 ];
 
+// adds an active class on the hamburger menu and the nav-menu which makes the mobile menu open
+// use the active class on the hamburger to create that X animation
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+});
+
 // dynamically create nav menu items
 // for each menuItem, create a li item within the existing list
 menuItems.forEach((element) => {
   let li = document.createElement("li");
-  li.appendChild(document.createTextNode(element));
-  // console.log("li", li);
+  let link = document.createElement("a");
+
+  // set attributes for anchor element
+  link.setAttribute("href", "#");
+  link.setAttribute("class", "nav-link");
+  link.style.color = "inherit";
+
+  // add text to anchor element
+  link.appendChild(document.createTextNode(element));
+  // remove the active class which closes the menu
+  // when users click on menu item, it will lead back to home page
+  li.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  });
+  console.log("link", link);
+  // add link to menu item element
+  li.appendChild(link);
+  // li.appendChild(document.createTextNode(element));
+  console.log("li", li);
   fragment.appendChild(li);
 });
 
@@ -79,8 +105,4 @@ infoItems.forEach((element) => {
   // console.log("info column", infoColumn.innerHTML);
   infoRow.appendChild(infoColumn);
   // console.log("info row", infoRow.innerHTML);
-});
-
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
 });

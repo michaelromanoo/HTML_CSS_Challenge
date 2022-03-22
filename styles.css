@@ -48,7 +48,7 @@ header {
 
 #nav-menu > li {
   /* display: none; */
-  padding: 70px;
+  padding: 60px;
   text-align: center;
   cursor: pointer;
   margin-left: 2rem;
@@ -58,6 +58,20 @@ header {
 .hamburger {
   display: block;
   padding: 10px;
+  cursor: pointer;
+}
+
+/* add cross animation when hamburger menu is active */
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(47deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 .bar {
