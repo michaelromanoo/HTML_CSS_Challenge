@@ -51,7 +51,16 @@ header {
   padding: 60px;
   text-align: center;
   cursor: pointer;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
+  font-size: 1.4rem;
+}
+
+#nav-menu > li:last-child {
+  background-color: #ffae42;
+  border: 2px solid #ffae42;
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  margin: 3rem 0.5rem;
 }
 
 /* Hamburger Menu */
@@ -159,7 +168,10 @@ header {
 .banner-btn {
   background-color: #ffae42;
   border: 2px solid #ffae42;
-  padding: 10px 30px;
+  padding: 1.3rem 2rem;
+  /* padding: 10px 30px; */
+  border-radius: 5rem;
+  width: 100%;
 }
 
 /* Info */
@@ -221,6 +233,10 @@ header {
     display: block;
     padding: 10px;
     cursor: pointer;
+  }
+
+  #nav-menu > li:last-child {
+    display: none;
   }
 
   #nav-menu > li:hover {

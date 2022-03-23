@@ -2,9 +2,16 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.getElementById("nav-menu");
 const infoRow = document.getElementById("info-row");
 const navLink = document.querySelectorAll(".nav-link");
+const ctaButton = document.getElementById("cta-btn");
 const fragment = new DocumentFragment();
 const contentFragment = new DocumentFragment();
-const menuItems = ["Products", "About", "Contact", "Free Trial"];
+const menuItems = [
+  "Products",
+  "About",
+  "Contact",
+  "Free Trial",
+  "Try Boxed Coffee for free",
+];
 const infoItems = [
   {
     img: "/img/icon-delivery.png",
@@ -65,8 +72,6 @@ menuItems.forEach((element) => {
 
 // console.log("fragment children", fragment.children);
 navMenu.appendChild(fragment);
-
-// console.log("nav menu", navMenu);
 
 infoItems.forEach((element) => {
   // create column div for each info element
