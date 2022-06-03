@@ -14,21 +14,21 @@ const menuItems = [
 ];
 const infoItems = [
   {
-    img: "/img/icon-delivery.png",
+    img: "img/icon-delivery.png",
     alt: "Delivered Fast",
     title: "Delivered Fast",
     description:
       " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, voluptates. ",
   },
   {
-    img: "/img/icon-coffee.png",
+    img: "img/icon-coffee.png",
     alt: "Delivered Hot",
     title: "Delivered Hot",
     description:
       " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, voluptates. ",
   },
   {
-    img: "/img/icon-time.png",
+    img: "img/icon-time.png",
     alt: "Delivered Now",
     title: "Delivered Now",
     description:
